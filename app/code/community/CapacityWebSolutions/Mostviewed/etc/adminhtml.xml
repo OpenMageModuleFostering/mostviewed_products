@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<config>
+	<menu>
+		<cws module="mostviewed">
+		<title>MageBees</title>
+		<sort_order>70</sort_order> 
+			<children>
+				<mostviewed module="mostviewed">
+					<title>Most Viewed Products</title>
+					<sort_order>70</sort_order>               
+					<children>
+						<groups module="mostviewed">
+							<title>Manage Most Viewed Products</title>
+							<sort_order>10</sort_order>
+							<action>adminhtml/mostviewed</action>
+						</groups>
+						<settings>
+							<title>Settings</title>
+							<sort_order>20</sort_order>
+							<action>adminhtml/system_config/edit/section/mostviewed</action>
+						</settings>
+					</children>
+				</mostviewed>
+			</children>
+		</cws>
+	</menu>
+	<acl>
+		<resources>
+			<admin>
+				<children>
+					<system>
+						<children>
+							<config>
+								<children>
+									<mostviewed>
+										<title>Most Viewed Products Section</title>
+									</mostviewed>
+								</children>
+							</config>
+						</children>
+					</system>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+</config>

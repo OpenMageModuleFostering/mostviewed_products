@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <adminhtml_mostviewed_index>
+	    <reference name="content">
+ 		    <block type="mostviewed/adminhtml_mostviewed"  name="mostviewed" />
+        </reference>
+    </adminhtml_mostviewed_index>
+    <adminhtml_mostviewed_edit>
+		<reference name="head">
+			<action method="addJs"><script>mostviewed/product-selector.js</script></action>
+        </reference>
+		<reference name="left">
+			<block type="adminhtml/store_switcher" name="store_switcher" before="-"></block>
+           
+        </reference>
+    </adminhtml_mostviewed_edit>
+</layout>
