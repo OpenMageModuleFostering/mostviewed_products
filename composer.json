@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Mostviewed_Products",
+    "name": "OpenMageModuleFostering\/Mostviewed_Products",
     "type": "magento-module",
     "license": "OSL-3.0",
     "homepage": "",
     "description": "This extension is for list most viewed products.",
     "authors": [
-    {
-        "name": "Capacity Web Solutions",
-        "email": "magento@capacitywebsolutions.com"
-    }
-],
+        {
+            "name": "Capacity Web Solutions",
+            "email": "magento@capacitywebsolutions.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
